@@ -1,9 +1,106 @@
-nav {
-    justify-content: space-between;
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
 
-#menu {
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
+body {
+    min-height: 100vh;
+    background-color: #ECE6DB;
 }
+
+.header {
+    position: sticky;
+    background-color: #ECE6DB;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 5px;
+    border-style: solid;
+    height: 10vh;
+}
+
+.navegacion a, a:visited, a:active {
+    font-size: 32px;
+    margin-left: 100px;
+    text-decoration: none;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 999;
+}
+
+
+#inicio {
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+    transition: all 1s ease-out 100ms;
+
+}
+
+.hover-zoom {
+    display: inline-block;
+    position: relative;
+    color: black;
+    transition: all 1s ease-out 100ms;
+}
+
+.hover-zoom:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-zoom:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.5);
+    font-weight: 900;
+}
+
+#sobreMi {
+    position: relative;
+    height: 90vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow: scroll;
+}
+
+.contenedorTexto {
+    margin-left: 150px;
+    margin-right: 800px;
+    margin-top: 100px;
+}
+
+#fotoPerfil {
+    float: right;
+    margin-top: 100px;
+    margin-right: 200px;
+    width: 24%;
+}
+
+.titulo {
+    font-weight: 200;
+    font-size: 40px ;
+}
+
+.textoSobreMi {
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
