@@ -1,30 +1,9 @@
-main {
-    
-    height: 100%;
-    max-width: 500px;
-    margin: auto;
-    border: 5px;
-    border-style:solid;
-    border-radius: 3%;
-    color: aliceblue;
-    text-align: center;
-    
+nav {
+    justify-content: space-between;
 }
 
-body{
-    background: rgb(58,59,68);
-    background: radial-gradient(circle, rgba(58,59,68,1) 0%, rgba(0,0,0,1) 100%, rgba(34,34,34,1) 100%); 
-    
-}
-
-#perfil{
+#menu {
+    display: flex;
+    justify-content: space-around;
     width: 50%;
-}
-
-.iconos{
-    width: 10%;
-}
-
-#ghub{
-    width: 20%;
 }
